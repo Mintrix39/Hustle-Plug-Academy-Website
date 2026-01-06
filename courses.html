@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="course-item">
-                        <div class="course-badge">👨‍🏫</div>
+                        <div class="course-badge"></div>
                         <h3>Copy Writing</h3>
                         <p>Share your knowledge and earn money teaching others. Platform selection, marketing, and scaling your tutoring business.</p>
                         <div class="course-meta">
@@ -128,9 +128,9 @@
                         <a href="course modules/Copy Writing.pdf" class="btn btn-primary">Read Now</a>
                     </div>
                     <div class="course-item">
-                        <div class="course-badge">🛠️</div>
+                        <div class="course-badge"></div>
                         <h3>Whatsapp Business Mastery</h3>
-                        <p>Whatsapp Business Mastery can invlove in mastering a number of businesses that are around you today</p>
+                        <p>Whatsapp Business Mastery can involve in mastering a number of businesses that are around you today</p>
                         <div class="course-meta">
                             <span class="duration">10 weeks</span>
                             <span class="level">All Levels</span>
@@ -148,7 +148,7 @@
                         <a href="course modules/AI tool for produvtivity and income.pdf" class="btn btn-primary">Read Now</a>
                 </div>
                 <div class="course-item">
-                        <div class="course-badge">💼</div>
+                        <div class="course-badge"></div>
                         <h3>T-shirt Printing</h3>
                         <p>Master the art of T-shirt printing from design to distribution. Learn about equipment, materials, and marketing strategies.</p>
                         <div class="course-meta">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div class="course-item">
-                        <div class="course-badge">📈</div>
+                        <div class="course-badge"></div>
                         <h3>Selling Clothes Online and Offline</h3>
                         <p>Unlock the secrets to selling clothes both online and offline. Learn about inventory management, pricing strategies, and customer acquisition techniques.</p>
                         <div class="course-meta">
@@ -169,7 +169,7 @@
                         <a href="course modules/Selling Clothes Online and Offline.pdf" class="btn btn-primary">Read Now</a>
                 </div>
                 <div class="course-item"></div>
-                        <div class="course-badge">📊</div>
+                        <div class="course-badge"></div>
                         <h3>Marketing</h3>
                         <p>Unlock the secrets to effective marketing. Learn about branding, advertising, and customer engagement strategies.</p>
                         <div class="course-meta">
@@ -214,8 +214,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Hustle Academy. All rights reserved. Built by hustlers, for hustlers.</p>
+             <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Hustle Academy. All rights reserved.</p>
+                <script>
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                    </script>
             </div>
         </div>
     </footer>
