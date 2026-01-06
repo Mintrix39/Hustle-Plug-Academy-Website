@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Hustle Academy</div>
-            <ul class="nav-menu">
-                <li><a href="mainplug.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="ideas.html">Hustle Ideas</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="contact.html" class="cta-btn">Get Started</a></li>
-            </ul>
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Hustle Academy</div>
+        <ul class="nav-menu">
+            <li><a href="mainplug.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="ideas.html">Hustle Ideas</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="auth.html" class="cta-btn">Login / Sign Up</a></li>
+        </ul>
+        <div id="user-profile" class="user-profile" style="display: none;">
+            <button class="profile-btn" onclick="toggleProfileMenu()">
+                <span id="user-initials">JD</span>
+            </button>
+            <div id="profile-menu" class="profile-menu">
+                <div class="profile-info">
+                    <strong id="profile-name">John Doe</strong>
+                    <span id="profile-email">john@email.com</span>
+                </div>
+                <hr>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="my-courses.html">My Courses</a>
+                <a href="settings.html">Settings</a>
+                <hr>
+                <a href="#" onclick="handleLogout()">Logout</a>
+            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <header class="hero">
         <div class="hero-content">
@@ -76,7 +93,7 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <h4>Hustle Academy</h4>
-                    <p>Empowering Gen Z with practical skills and real income opportunities.</p>
+                    <p>Empowering youth with practical skills and real income opportunities.</p>
                 </div>
                 <div class="footer-column">
                     <h4>Quick Links</h4>
@@ -96,7 +113,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Hustle Academy. All rights reserved. Built by hustlers, for hustlers.</p>
+                <p>&copy; <span id="current-year"></span> Hustle Academy. All rights reserved.</p>
+                <script>
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                    </script>
             </div>
         </div>
     </footer>
