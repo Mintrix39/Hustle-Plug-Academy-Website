@@ -143,22 +143,22 @@
                 <h2>How to Choose the Right Hustle</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="icon">🎯</div>
+                        <div class="icon"></div>
                         <h3>Match Your Skills</h3>
                         <p>Choose a hustle that aligns with your existing skills or interests you want to develop</p>
                     </div>
                     <div class="feature-card">
-                        <div class="icon">⏰</div>
+                        <div class="icon"></div>
                         <h3>Consider Your Time</h3>
                         <p>Some hustles need daily attention, others can be more passive once set up</p>
                     </div>
                     <div class="feature-card">
-                        <div class="icon">💰</div>
+                        <div class="icon"></div>
                         <h3>Investment Required</h3>
                         <p>Start with low-investment hustles if you're just beginning your journey</p>
                     </div>
                     <div class="feature-card">
-                        <div class="icon">📈</div>
+                        <div class="icon"></div>
                         <h3>Growth Potential</h3>
                         <p>Think about where you want to be in 6 months, 1 year, or 5 years</p>
                     </div>
@@ -199,8 +199,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Hustle Academy. All rights reserved. Built by hustlers, for hustlers.</p>
+             <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Hustle Academy. All rights reserved.</p>
+                <script>
+                    document.getElementById('current-year').textContent = new Date().getFullYear();
+                    </script>
             </div>
         </div>
     </footer>
